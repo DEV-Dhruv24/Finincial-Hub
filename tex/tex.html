@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tax Calculator</h1>
+            <p>Calculate your income tax based on the Indian tax system and view the results in different currencies.</p>
+        </header>
+        <main>
+            <section class="currency-switch">
+                <label for="currency">Select Currency:</label>
+                <select id="currency">
+                    <option value="INR">INR (Indian Rupees)</option>
+                    <option value="USD">USD (US Dollars)</option>
+                    <!-- Add more currencies if needed -->
+                </select>
+            </section>
+            <section class="calculator">
+                <form id="tax-form">
+                    <label for="income">Enter Annual Income:</label>
+                    <input type="number" id="income" placeholder="Enter income" required>
+                    <button type="submit">Calculate Tax</button>
+                </form>
+                <div id="result" class="result hidden">
+                    <h2>Tax Details</h2>
+                    <p id="tax-amount"></p>
+                    <p id="currency-value"></p>
+                </div>
+            </section>
+            <section class="tax-info">
+                <h2>Indian Tax System</h2>
+                <p>The Indian tax system is progressive, meaning that the more you earn, the higher the rate at which you are taxed. Below are the tax slabs:</p>
+                <ul>
+                    <li>Up to ₹2,50,000: No tax</li>
+                    <li>₹2,50,001 to ₹5,00,000: 5% of income exceeding ₹2,50,000</li>
+                    <li>₹5,00,001 to ₹10,00,000: 10% of income exceeding ₹5,00,000</li>
+                    <li>₹10,00,001 to ₹50,00,000: 20% of income exceeding ₹10,00,000</li>
+                    <li>Above ₹50,00,000: 30% of income exceeding ₹50,00,000</li>
+                </ul>
+            </section>
+            <section class="faqs">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <div class="faq-item">
+                    <h3>How is the income tax calculated?</h3>
+                    <p>Income tax is calculated based on the applicable tax slabs. The income is divided into different slabs, and tax is applied at different rates for each slab.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I switch between currencies?</h3>
+                    <p>Yes, you can select your preferred currency from the dropdown menu, and the tax amount will be converted accordingly.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scr.js"></script>
+</body>
+</html>

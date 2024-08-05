@@ -1,0 +1,699 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 1.8em;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2C3E50;
+    background-color: white;
+}
+
+
+nav ul li a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover i {
+    color: #ffffff;
+}
+
+/* Section Styling */
+#Home {
+    background-color: #ffffff; /* White background for a clean look */
+    color: #333333; /* Dark text for readability */
+    padding: 40px 20px; /* Generous padding */
+    margin: 20px auto; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 1200px; /* Maximum width for content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Heading Styling */
+#Home h1 {
+    font-size: 2.5em; /* Large heading size */
+    color: #2C3E50; /* Dark blue for prominence */
+    margin-bottom: 20px; /* Spacing below heading */
+    text-align: center; /* Center align for emphasis */
+    font-weight: 700; /* Bold weight */
+    position: relative; /* For pseudo-elements */
+}
+
+/* Heading Decoration */
+#Home h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FF5722; /* Accent color */
+    margin: 20px auto 0; /* Center align and space from text */
+    border-radius: 2px; /* Rounded edges */
+}
+
+/* Paragraph Styling */
+
+#Home p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+/* List Styling */
+#Home ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+#Home ul li {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Spacing between list items */
+    font-size: 1.1em; /* Font size */
+}
+
+#Home ul li i {
+    color: #FF5722; /* Accent color for icons */
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 1.2em; /* Icon size */
+    transition: transform 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+#Home ul li:hover i {
+    transform: scale(1.2); /* Slight zoom effect */
+    color: #FF6F61; /* Darker accent color on hover */
+}
+
+/* Advanced Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#Home p, #Home ul {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Tools Section Styling */
+#tools {
+    background: #ffffff;
+    padding: 100px 40px; /* Increased padding for a more spacious and airy look */
+    margin: 70px auto; /* Centered section with larger margin */
+    border-radius: 20px; /* More pronounced rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow for a subtle lift */
+    max-width: 1300px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Section Heading Styling */
+#tools h2 {
+    font-size: 3em; /* Larger heading for prominence */
+    color: #2C3E50;
+    margin-bottom: 60px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Increased letter spacing */
+    line-height: 1.2;
+}
+
+/* Heading Decoration */
+#tools h2::after {
+    content: '';
+    display: block;
+    width: 150px; /* Wider underline for emphasis */
+    height: 6px; /* Thicker underline */
+    background: linear-gradient(90deg, #FF5722, #FF6F61); /* Gradient underline */
+    margin: 25px auto 0;
+    border-radius: 5px; /* Rounded edges */
+}
+
+/* Card Container Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Larger space between cards */
+}
+
+/* Card Box Styling */
+.card-box {
+    width: 350px; /* Slightly wider card */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    padding: 30px; /* Increased padding for content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; /* For pseudo-elements */
+}
+
+/* Card Hover Effects */
+.card-box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Tool Card Heading Styling */
+#tools h3 {
+    font-size: 1.8em; /* Larger heading size */
+    color: #2C3E50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Icon Styling */
+#tools i {
+    color: #FF5722;
+    margin-right: 15px;
+    font-size: 1.6em; /* Larger icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Icon Hover Effect */
+.card-box:hover i {
+    color: #FF6F61; /* Darker shade on hover */
+}
+
+/* Card Paragraph Styling */
+#tools p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #666;
+    line-height: 1.8; /* Improved readability */
+    margin: 15px 0 0;
+}
+
+/* Anchor Tag Styling */
+#tools a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Block display for entire card */
+}
+
+/* Anchor Tag Hover Effect */
+.card-box a:hover {
+    color: #FF5722; /* Accent color for text on hover */
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    #tools {
+        padding: 60px 20px;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .card-box {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+}
+
+/* newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+
+#charts {
+    background-color: #ffffff; /* Clean white background */
+    color: #333; /* Dark text for readability */
+    padding: 40px 20px; /* Padding around the section */
+    margin: 40px auto; /* Centered section with margin */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    max-width: 1200px; /* Maximum width for alignment */
+    font-family: 'Arial', sans-serif; /* Simple, clean font */
+    display: flex;
+    justify-content: space-between; /* Space out content */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.chart-description {
+    max-width: 45%; /* Space for text */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.chart-container {
+    width: 55%; /* Space for the chart */
+    display: flex;
+    justify-content: center; /* Center the chart */
+    align-items: center; /* Center the chart vertically */
+}
+
+#priceChart {
+    width: 100% !important; /* Full width of the container */
+    height: 400px; /* Adjust height of the chart */
+    max-width: 700px; /* Max width for larger screens */
+    border-radius: 10px; /* Rounded corners for canvas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* newwwwwwwwwwwwwwwwwww */
+
+/* Container for better alignment */
+.container {
+    max-width: 800px; /* Max width for centering */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 20px; /* Padding around the section */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    font-family: 'Arial', sans-serif; /* Simple, clean font */
+    color: #333; /* Dark text for readability */
+    text-align: center; /* Center align text */
+}
+
+/* Heading Styling */
+#ratings h2 {
+    font-size: 2.5em; /* Larger heading */
+    color: #2C3E50; /* Dark blue for the heading */
+    margin-bottom: 30px; /* Space below heading */
+    font-weight: bold; /* Bold heading */
+    position: relative; /* For the underline effect */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Heading Decoration */
+#ratings h2::after {
+    content: '';
+    display: block;
+    width: 120px; /* Underline width */
+    height: 4px; /* Underline thickness */
+    background-color: #FF5722; /* Accent color */
+    margin: 20px auto 0; /* Center and space from text */
+    border-radius: 2px; /* Rounded edges */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Space between elements */
+    align-items: center; /* Center align items horizontally */
+}
+
+/* Label Styling */
+label {
+    display: flex;
+    align-items: center; /* Center icon and text */
+    gap: 10px; /* Space between icon and text */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #555; /* Dark gray text */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width for labels */
+}
+
+/* Input and Textarea Styling */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em; /* Font size for readability */
+    color: #333; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+    font-style: italic; /* Italicize placeholder text */
+}
+
+/* Input and Textarea Focus Styling */
+input:focus,
+textarea:focus {
+    border-color: #FF5722; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.3); /* Enhanced shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+button {
+    background-color: #FF5722; /* Accent color for button */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 1.1em; /* Font size for readability */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 20px; /* Space above button */
+}
+
+button:hover {
+    background-color: #E64A19; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2C3E50; /* Dark blue-gray background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center align text */
+    font-family: 'Arial', sans-serif; /* Simple, clean font */
+    border-top: 4px solid #FF5722; /* Accent border at the top */
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center align container */
+    padding: 0 20px; /* Padding inside container */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 15px; /* Space between items */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Flexbox for alignment */
+    gap: 20px; /* Space between icons */
+}
+
+/* Social Icon Styling */
+.social-icons a {
+    color: white; /* White color for icons */
+    font-size: 1.5em; /* Larger icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.social-icons a:hover {
+    color: #FF5722; /* Accent color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Text Styling */
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em; /* Font size */
+}
+
+/* Media Query for Tablets (Portrait and Landscape) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px; /* Adjusted padding for better spacing */
+    }
+
+    nav h2 {
+        font-size: 1.4em; /* Adjusted font size for better readability */
+    }
+
+    nav ul {
+        gap: 20px; /* Adequate space between navigation items */
+    }
+
+    #Home h1 {
+        font-size: 1.8em; /* Slightly smaller but still prominent */
+    }
+
+    #Home p {
+        font-size: 0.95em; /* Subtle adjustment for better readability */
+    }
+
+    #tools h2 {
+        font-size: 1.9em; /* Harmonized heading size */
+    }
+
+    .card-container {
+        gap: 25px; /* Balanced space between cards */
+    }
+
+    .card-box {
+        width: calc(50% - 25px); /* Two cards per row with spacing */
+    }
+
+    #charts {
+        display: flex; /* Flexbox for responsive chart layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .chart-description,
+    .chart-container {
+        width: 90%; /* Slightly reduced width for better alignment */
+    }
+
+    #priceChart {
+        height: 300px; /* Consistent height for charts */
+    }
+
+    #contact {
+        padding: 25px 15px; /* Adequate padding for contact section */
+    }
+
+    form {
+        width: 100%; /* Full width for form elements */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px); /* Full width with padding adjustment */
+    }
+
+    button {
+        width: calc(100% - 20px); /* Full width button with padding */
+        padding: 12px; /* Enhanced button padding */
+    }
+
+    footer {
+        padding: 20px 0; /* Ample padding for footer */
+    }
+
+    .social-icons {
+        gap: 20px; /* Spacing between social icons */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    nav h2 {
+        font-size: 1.2em; /* Smaller but clear heading */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 15px; /* Reduced space between items */
+    }
+
+    #Home h1 {
+        font-size: 1.6em; /* Smaller heading size */
+    }
+
+    #Home p {
+        font-size: 0.85em; /* Slightly smaller paragraph text */
+    }
+
+    #tools h2 {
+        font-size: 1.6em; /* Consistent heading size */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 25px; /* Balanced spacing between cards */
+    }
+
+    .card-box {
+        width: 100%; /* Full width for cards */
+    }
+
+    #charts {
+        display: flex; /* Flexbox for responsive layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .chart-description,
+    .chart-container {
+        width: 95%; /* Improved width for better layout */
+    }
+
+    #priceChart {
+        height: 250px; /* Adjusted height for smaller screens */
+    }
+
+    #contact {
+        padding: 20px 10px; /* Optimized padding */
+    }
+
+    form {
+        width: 100%; /* Full width for form elements */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+        padding: 12px; /* Enhanced button padding */
+    }
+
+    footer {
+        padding: 15px 0; /* Adequate padding for footer */
+    }
+
+    .social-icons {
+        gap: 15px; /* Space between social icons */
+    }
+}
+
+/* Media Query for Very Small Devices (e.g., small smartphones) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px; /* Reduced padding */
+    }
+
+    nav h2 {
+        font-size: 1em; /* Smaller but legible heading */
+    }
+
+    nav ul {
+        gap: 10px; /* Minimal but adequate gap */
+    }
+
+    #Home h1 {
+        font-size: 1.4em; /* Smaller heading size */
+    }
+
+    #Home p {
+        font-size: 0.75em; /* Compact paragraph text */
+    }
+
+    #tools h2 {
+        font-size: 1.4em; /* Smaller heading */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Adequate spacing between cards */
+    }
+
+    .card-box {
+        width: 100%; /* Full width cards */
+    }
+
+    #charts {
+        display: flex; /* Flexbox for better alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .chart-description,
+    .chart-container {
+        width: 100%; /* Full width for all elements */
+    }
+
+    #priceChart {
+        height: 200px; /* Reduced height for charts */
+    }
+
+    #contact {
+        padding: 15px 5px; /* Reduced padding */
+    }
+
+    form {
+        width: 100%; /* Full width form */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+        padding: 10px; /* Adequate padding */
+    }
+
+    footer {
+        padding: 10px 0; /* Reduced padding */
+    }
+
+    .social-icons {
+        gap: 10px; /* Space between social icons */
+    }
+}

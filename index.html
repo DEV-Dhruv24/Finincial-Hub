@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Financial Hub offers comprehensive financial management tools and planning resources for individuals and businesses. Track expenses, manage budgets, and access valuable financial insights.">
+    <meta name="keywords" content="financial management, expense tracker, budgeting tools, investment calculator, tax calculator, financial planning, financial hub">
+    <meta name="author" content="Dhruv Thakar">
+    <meta property="og:title" content="Financial Hub - Comprehensive Financial Management">
+    <meta property="og:description" content="Financial Hub provides user-friendly tools for tracking expenses, managing budgets, and financial planning. Join us today for effective financial management.">
+    <meta property="og:image" content="URL_to_your_image">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Financial Hub - Comprehensive Financial Management">
+    <meta name="twitter:description" content="Discover powerful tools for expense tracking and financial planning at Financial Hub.">
+    <meta name="twitter:image" content="URL_to_your_image">
+    <title>Financial Hub - Comprehensive Financial Management</title>
+    <link rel="stylesheet" href="flex.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>DHRUV24</h2>
+            <ul>
+                <li><a href="#Home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#tools"><i class="fas fa-tools"></i> Tools</a></li>
+                <li><a href="#charts"><i class="fa fa-bar-chart" ></i> Data </a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <h1>About Financial Hub</h1>
+        <p>Welcome to Financial Hub, your premier destination for comprehensive financial management and planning tools. Whether you're an individual seeking to track your personal finances or a business looking to streamline your financial operations, Financial Hub offers a suite of powerful, user-friendly tools designed to meet your needs.</p>
+        <p>Our mission is to empower you with the knowledge and resources necessary to take control of your financial future. We believe that with the right tools and insights, anyone can achieve financial stability and growth. That's why we've developed a range of features to help you:</p>
+        <p>At Financial Hub, we understand that managing finances can be overwhelming. Our platform is designed to simplify this process by providing intuitive and effective tools. Our expense tracker allows you to record and categorize your daily expenditures, giving you a clear picture of where your money goes. Our budgeting tools help you set financial goals and stick to them, ensuring you stay on track with your financial plans.</p>
+        <p>Join the Financial Hub community today and take the first step towards achieving your financial goals. With our intuitive interface and robust feature set, managing your finances has never been easier or more effective. Let Financial Hub be your partner on the path to financial success.</p>
+    </section>
+
+    <section id="tools">
+        <h2>Our Tools</h2>
+        <div class="card-container">
+            <div class="card-box">
+                <div class="card-content">
+                    <a href="tex/tex.html">
+                        <h3><i class="fas fa-calculator"></i> Tex Counter</h3>
+                        <p>Check how much tax you have to pay.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="card-content">
+                    <a href="main/traker.html">
+                        <h3><i class="fas fa-wallet"></i> Expense Tracker</h3>
+                        <p>Keep track of your expenses and manage your budget effectively.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="card-content">
+                    <a href="sip/sip.html">
+                        <h3><i class="fas fa-calculator"></i> Sip Calculator</h3>
+                        <p> Calculate Your Sip with our sip calculator</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="card-content">
+                    <a href="study/page.html">
+                        <h3><i class="fas fa-file-alt"></i> Documentary</h3>
+                        <p>Access important financial documents and keep them organized.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="charts">
+        <div class="chart-description">
+            <h2>Chart</h2>
+            <br>
+            <br>
+            <br>
+            <h3>Prices of Regular Usage Items</h3>
+            <br>
+            <br>
+            <p>This is how our regular expense bar looks like
+                <br> so this is the time to track your regular expenses
+            </p>
+        </div>
+        <div class="chart-container">
+            <canvas id="priceChart"></canvas> <!-- Chart will be inserted here -->
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container">
+            <section id="ratings">
+                <h2>Your Review Matters</h2>
+                
+                <form action="/submit-review" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Submit Review</button>
+                </form>
+                
+            </section>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Financial Hub. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dhruv_thakar_24/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://dev-dhruv24.github.io/music10x/" target="_blank" aria-label="LinkedIn">
+                    <i  class="fa fa-headphones"></i>
+                </a>
+                <a href="https://github.com/DEV-Dhruv24" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com/yourprofile" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="work.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

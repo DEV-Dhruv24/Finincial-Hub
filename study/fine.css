@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #ecf0f1; /* Light gray background for contrast */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: #2C3E50; /* Dark blue-gray background */
+    color: #ffffff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.2em; /* Larger font size */
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Main Content */
+main {
+    padding: 120px 20px 20px; /* Padding for space below the fixed header */
+}
+
+section {
+    margin-bottom: 80px; /* Increased space between sections */
+}
+
+/* Resources Section */
+.resources {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.resource-card {
+    background: #ffffff;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 30px); /* Responsive card width */
+    max-width: 320px;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.resource-card h2 {
+    color: #2C3E50;
+    font-size: 2.4em; /* Larger font size */
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resource-card p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #2C3E50;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px; /* More rounded corners */
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: 2px solid #2C3E50; /* Border for button */
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #1A252F; /* Darker blue-gray for hover effect */
+    transform: scale(1.05);
+}
+
+/* Latest Articles Section */
+.latest-articles {
+    background: #ffffff;
+    padding: 60px 20px;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.latest-articles h2 {
+    font-size: 2.8em;
+    color: #2C3E50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2C3E50; /* Underline for emphasis */
+    padding-bottom: 10px;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.article-item {
+    background: #ffffff;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.article-item h3 {
+    color: #2C3E50;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.article-item p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.read-more:hover {
+    color: #1A252F; /* Darker blue-gray for hover effect */
+}
+
+/* Footer */
+footer {
+    background: #2C3E50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
